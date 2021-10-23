@@ -1,7 +1,7 @@
 # Ticketswap
 Identify a feature that is critical, define two scenarios and set up an automation test suit to cover these scenarios.
  
-## Description
+## Task description
 A number of critical features can be indetified :   
 Account functionality, Cart functionality, Page navigation, Login functionality, Page load times and more.    
 
@@ -10,6 +10,11 @@ As a user myself, I find it to be the most cornerstone feature and the first ele
 It has a vital functionality, as it enables users to navigate to their desired event. 
 Without the search bar users cannot search for events, the site becomes a random popular event generator and therefore transactions drop.  
 The purpose was to evaluate standard and common actions so no assumptions were made in these scenarios.
+
+## Solution & Test Scenarios
+
+The solution is written in Javascript using Mocha test framework and Chai assertions library. Finally a report is generated and saved locally using Mochawesome.
+Ideally the 
 
 **Scenario #1 :** A user searches the site for an event.  
 **Expected result :** The results of a search query should partially match the query itself.  
@@ -20,9 +25,6 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 **Test Steps :** Landing page -> Select search field -> Verify element's text property is empty
 
 ## Information and future plans.
-
-**Instructions to run :** 
-
 **Scalability :** 
 
 -Test files should include specific features to be tested.  
