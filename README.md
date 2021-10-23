@@ -13,8 +13,8 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 
 ## Solution & Test Scenarios
 
-The solution is written in Javascript using Mocha test framework and Chai assertions library. Finally a report is generated and saved locally using Mochawesome.  
-Ideally the MORETEXTHERE
+The solution is written in Javascript using Mocha test framework, Chai assertion library and mochawesome for report generation.  
+
 
 **Scenario #1 :** A user searches the site for an event.  
 **Expected result :** The results of a search query should partially match the query itself.  
