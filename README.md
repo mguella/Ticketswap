@@ -17,14 +17,14 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 
 ## Information and future plans.
 
-** Instructions to run :** 
+**Instructions to run :** 
 
-** Scalability :** 
+**Scalability :** 
 
 Test files should include specific features to be tested.
 Additonal tests can be added in the relative file.
 
-** TODO:** 
+**TODO:** 
 create BasePage with basic page constructor where other pages will be built from (driver instatiating, basic webdriver methods)
 create any page object to inherit from base page and use the methods defined there to create the test methods
 create tests to inherit from the page they are testing
