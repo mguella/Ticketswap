@@ -16,7 +16,7 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 **Test Steps :** Landing page -> Enter query in search field -> Load more results -> Verify results contain the user's query
 
 **Scenario #2 :** A user attempts to use the site search field.  
-**Expected result :** The search field is empty and does not contain any characters.
+**Expected result :** The search field is empty and does not contain any characters.  
 **Test Steps :** Landing page -> Select search field -> Verify element's text property is empty
 
 ## Information and future plans.
