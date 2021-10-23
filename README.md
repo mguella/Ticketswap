@@ -1,9 +1,7 @@
 # Ticketswap
- Ticketswap assignment
+Identify a feature that is critical, define two scenarios and set up an automation test suit to cover these scenarios.
  
- ## Instructions to run 
-
-
+## Description
 A number of critical features can be indetified : Page load, Account functionality, Cart functionality, Page navigation etc.
 The feature that was chosen to be tested is the search bar. 
 As a user myself, I find it to be the most cornerstone feature of the site.
@@ -17,6 +15,8 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 **Scenario #2 :** A user attempts to use the site search field
 **Expected result :** The search field is empty and does not contain any characters.
 
+
+## Instructions to run : 
 
 ## Scalability : 
 
