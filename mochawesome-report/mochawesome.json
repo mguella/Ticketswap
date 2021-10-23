@@ -1,0 +1,241 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-23T12:09:26.170Z",
+    "end": "2021-10-23T12:09:32.277Z",
+    "duration": 6107,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0df0b477-cb1a-47f0-85ec-2ea7056c5a88",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8659831c-2b73-4f31-af3d-4ddab56343b0",
+          "title": "Sanity tests",
+          "fullFile": "C:\\Users\\Dimitris\\Desktop\\study\\testing JS\\Ticketswap\\test\\sanityTests.js",
+          "file": "\\test\\sanityTests.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Sanity tests\"",
+              "fullTitle": "Sanity tests \"before each\" hook in \"Sanity tests\"",
+              "timedOut": null,
+              "duration": 6,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "driver = new Builder().forBrowser(\"chrome\").build();\ndriver.get(\"https://www.ticketswap.com/\");",
+              "err": {},
+              "uuid": "7f9a6f8b-4dc2-456c-8c62-40a1bbd3b2bc",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Sanity tests\"",
+              "fullTitle": "Sanity tests \"after each\" hook in \"Sanity tests\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "ba451f2a-1d49-4afa-baaa-d1630ca7a2c0",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Ensures facebook login element exists from sell ticket path",
+              "fullTitle": "Sanity tests Ensures facebook login element exists from sell ticket path",
+              "timedOut": null,
+              "duration": 4321,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//click the sell tickets button\nawait driver.findElement(By.xpath('//*[@id=\"__next\"]/div[1]/div/nav/ul/li[6]/a')).click();\n//wait till onboarding page loads\nawait driver.wait(until.elementLocated(By.xpath('//*[@id=\"__next\"]/div[3]/div[1]/button'),10000));\n//click the start selling button\nawait driver.findElement(By.className('css-8cc4q9 e1dvqv261')).click();\n//wait till login pop up loads, look for page header\nawait driver.wait(until.elementLocated(By.xpath('/html/body/ticketswap-portal[7]/div/div/header'),10000));\n\n//find the facebook login element\nawait driver.findElement(By.xpath('/html/body/ticketswap-portal[7]/div/div/div/div/div/div/div/button[1]')).then((element)=>{\n  //chai assert\n  expect(element).to.exist;\n});\n\n\n\n//new it block goes here",
+              "err": {},
+              "uuid": "95d8c2e5-fae2-41c8-958d-74f7e789fa6d",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "95d8c2e5-fae2-41c8-958d-74f7e789fa6d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4321,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        },
+        {
+          "uuid": "07d8a8ee-fd11-4c34-a67c-c7e256ed8281",
+          "title": "Search functionality tests",
+          "fullFile": "C:\\Users\\Dimitris\\Desktop\\study\\testing JS\\Ticketswap\\test\\searchBarTests.js",
+          "file": "\\test\\searchBarTests.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Search functionality tests\"",
+              "fullTitle": "Search functionality tests \"before each\" hook in \"Search functionality tests\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "driver = new Builder().forBrowser(\"chrome\").build();\ndriver.get(\"https://www.ticketswap.com/\");",
+              "err": {},
+              "uuid": "1b2d863d-ffa2-4c19-bda4-ca7f9befa0b7",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Search functionality tests\"",
+              "fullTitle": "Search functionality tests \"after each\" hook in \"Search functionality tests\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "driver.quit();",
+              "err": {},
+              "uuid": "f80efb0b-1a77-46f4-92c4-b37ad1cc3d8f",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Checks search query is included in test results",
+              "fullTitle": "Search functionality tests Checks search query is included in test results",
+              "timedOut": null,
+              "duration": 5633,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//send keys to the search box\n    await driver.findElement(By.id(\"site-search-input\")).sendKeys(\"Band\");\n    //wait till results drop down appears\n    await driver.wait(until.elementLocated(By.xpath('//*[@id=\"site-search-menu\"]/div[3]/a'),10000));\n    //find and click more results button\n    await driver.findElement(By.xpath('//*[@id=\"site-search-menu\"]/div[3]/a')).click();\n    //wait till next page loads\n    await driver.wait(until.elementLocated(By.xpath('//*[@id=\"__next\"]/div[2]/div[1]/h3'),10000));\n    //collect the first search result element\n    var elementText = await driver.findElement(By.className('css-11rlpdz eh8fd905')).getText();\n    \n    //chai should assert\n    expect(elementText).to.include('Band');\n    // TODO : check against all 5 first elements\n    /*await driver.findElements(By.className('css-11rlpdz eh8fd905')).then((elements)=>{\n        elements.map((el) => {\n            el.getText().then((text) =>{\n              text.should.include('Band');\n            })\n        })\n    });*/",
+              "err": {},
+              "uuid": "b3f7040c-e181-4f45-87db-dd8370268dcb",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ensures search bar is empty",
+              "fullTitle": "Search functionality tests Ensures search bar is empty",
+              "timedOut": null,
+              "duration": 98,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//get the search box text\n    let searchBoxText = await driver.findElement(By.id(\"site-search-input\")).getText();\n    //chai should assert\n    expect(searchBoxText).to.be.empty;",
+              "err": {
+                "message": "Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:61099",
+                "estack": "Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:61099\n    at ClientRequest.<anonymous> (node_modules\\selenium-webdriver\\http\\index.js:295:15)\n    at Socket.socketErrorListener (_http_client.js:475:9)\n    at emitErrorNT (internal/streams/destroy.js:106:8)\n    at emitErrorCloseNT (internal/streams/destroy.js:74:3)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)",
+                "diff": null
+              },
+              "uuid": "6cc54ead-7599-4735-b91d-399095c59d5d",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b3f7040c-e181-4f45-87db-dd8370268dcb"
+          ],
+          "failures": [
+            "6cc54ead-7599-4735-b91d-399095c59d5d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5731,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "autoOpen": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
