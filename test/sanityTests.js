@@ -3,16 +3,17 @@ var expect = require("chai").expect;
 var driver;
 
 //desribe block
-describe("Sanity tests", function () {
+describe("Search functionality tests", async function () {
 
   //before every it block
-  beforeEach(() =>{
-    driver = new Builder().forBrowser("chrome").build();
+  beforeEach(async() =>{
+    driver = await new Builder().forBrowser("chrome").build();
     driver.get("https://www.ticketswap.com/");
   });
+
   //after every it block
-  afterEach(()=>{
-    driver.quit();
+  afterEach(async()=>{
+    await driver.quit();
   })
 
   //it block
