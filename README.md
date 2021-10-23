@@ -1,7 +1,7 @@
 # Ticketswap
  Ticketswap assignment
  
- Instructions to run 
+ #Instructions to run 
 
 
 A number of critical features can be indetified : Page load, Account functionality, Cart functionality, Page navigation etc.
@@ -18,12 +18,12 @@ Scenario #2 : A user attempts to use the site search field
 Expected result : The search field is empty and does not contain any characters.
 
 
-Scalability : 
+#Scalability : 
 
 Test files should include specific features to be tested.
 Additonal tests can be added in the relative file.
 
-TODO: 
+#TODO: 
 create BasePage with basic page constructor where other pages will be built from (driver instatiating, basic webdriver methods)
 create any page object to inherit from base page and use the methods defined there to create the test methods
 create tests to inherit from the page they are testing
