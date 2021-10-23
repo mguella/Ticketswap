@@ -13,8 +13,9 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 
 ## Solution & Test Scenarios
 
-The solution is written in Javascript using Mocha test framework, Chai assertion library and mochawesome for report generation.  
-
+The solution is written in Javascript with Selenium WebDriver using Mocha test framework, Chai assertion library and mochawesome for report generation.  
+An alternative solution was written with Python with Selenium WebDriver and unittest framework.   
+Javascript was selected as the solution was more finalized and the results were more presentable. 
 
 **Scenario #1 :** A user searches the site for an event.  
 **Expected result :** The results of a search query should partially match the query itself.  
