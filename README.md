@@ -13,8 +13,8 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 
 ## Solution & Test Scenarios
 
-The solution is written in Javascript using Mocha test framework and Chai assertions library. Finally a report is generated and saved locally using Mochawesome.
-Ideally the 
+The solution is written in Javascript using Mocha test framework and Chai assertions library. Finally a report is generated and saved locally using Mochawesome.  
+Ideally the MORETEXTHERE
 
 **Scenario #1 :** A user searches the site for an event.  
 **Expected result :** The results of a search query should partially match the query itself.  
@@ -24,14 +24,4 @@ Ideally the
 **Expected result :** The search field is empty and does not contain any characters.  
 **Test Steps :** Landing page -> Select search field -> Verify element's text property is empty
 
-## Information and future plans.
-**Scalability :** 
 
--Test files should include specific features to be tested.  
--Additonal tests can be added in the relative file.  
-
-**TODO:** 
-
--create BasePage with basic page constructor where other pages will be built from (driver instatiating, basic webdriver methods).  
--create any page object to inherit from base page and use the methods defined there to create the test methods.  
--create tests to inherit from the page they are testing.  
