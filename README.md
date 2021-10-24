@@ -18,13 +18,17 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 
 ## Solution & Test Scenarios
 
+To run the solution please TEXTEXTEXTEXT
+npm install
+npm test -- --grep "Assignment : Search field tests"
+
 The solution is written in Javascript with Selenium WebDriver using Mocha test framework, Chai assertion library and mochawesome for report generation.  
 An alternative solution was written with Python with Selenium WebDriver and unittest framework.   
 Javascript was selected as the solution was more finalized and the results were more presentable. 
 
-**Scenario #1 :** A user attempts to use the site search field.  
-**Expected result :** The search field is empty and does not contain any characters.  
-**Test Steps :** Landing page -> Select search field -> Verify element's text property is empty
+**Scenario #1 :** Search field properly handled special characters.  
+**Expected result :** The search functionality and the site continue to function properly without any error.  
+**Test Steps :** Landing page -> Select search field -> Enter special characters in search field ->Load more results -> Ensure the first search result exists
 
 **Scenario #2 :** A user searches the site for an event.  
 **Expected result :** The results of a search query should partially match the query itself.  
