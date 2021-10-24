@@ -19,11 +19,11 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 ## Solution & Test Scenarios
 
 To run the solution please follow these steps 
-1.Download and unzip the contents
-2.Open console in said directory and run npm install  
-3.Download chromedriver for your chrome version : https://chromedriver.chromium.org/downloads 
-4.Add chromedriver to PATH (instructions : https://www.kenst.com/2015/03/including-the-chromedriver-location-in-macos-system-path/)
-5.npm test -- --grep "Assignment : Search field tests"
+1.Download and unzip the contents  
+2.Open console in said directory and run npm install    
+3.Download chromedriver for your chrome version : https://chromedriver.chromium.org/downloads   
+4.Add chromedriver to PATH (instructions : https://www.kenst.com/2015/03/including-the-chromedriver-location-in-macos-system-path/)  
+5.npm test -- --grep "Assignment : Search field tests"  
 
 The solution is written in Javascript with Selenium WebDriver using Mocha test framework, Chai assertion library and mochawesome for report generation.  
 An alternative solution was written with Python with Selenium WebDriver and unittest framework.   
