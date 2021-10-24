@@ -28,7 +28,8 @@ Javascript was selected as the solution was more finalized and the results were 
 
 **Scenario #1 :** Search field properly handled special characters.  
 **Expected result :** The search functionality and the site continue to function properly without any error.  
-**Test Steps :** Landing page -> Select search field -> Enter special characters in search field ->Load more results -> Ensure the first search result exists
+**Test Steps :** Landing page -> Select search field -> Enter special characters in search field ->Load more results -> Ensure the first search result exists  
+ TEXXTTTTT ABOUT list of things
 
 **Scenario #2 :** A user searches the site for an event.  
 **Expected result :** The results of a search query should partially match the query itself.  
