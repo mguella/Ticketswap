@@ -2,14 +2,14 @@
   "stats": {
     "suites": 2,
     "tests": 3,
-    "passes": 3,
+    "passes": 2,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-10-23T19:29:13.918Z",
-    "end": "2021-10-23T19:29:23.262Z",
-    "duration": 9344,
+    "failures": 1,
+    "start": "2021-10-24T09:52:24.014Z",
+    "end": "2021-10-24T09:52:33.474Z",
+    "duration": 9460,
     "testsRegistered": 3,
-    "passPercent": 100,
+    "passPercent": 66.66666666666666,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4503e7b9-e40f-4ddf-9b1c-8202d836df9e",
+      "uuid": "06de1498-724d-4541-994a-e02e68b23473",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,93 +27,16 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "74caa04a-e77c-420a-8263-0e3cc0bfea77",
-          "title": "Sanity tests",
+          "uuid": "bb55951e-a0a2-4555-9c5f-0e406197c861",
+          "title": "Search functionality tests",
           "fullFile": "C:\\Users\\Dimitris\\Desktop\\study\\testing JS\\Ticketswap\\test\\sanityTests.js",
           "file": "\\test\\sanityTests.js",
-          "beforeHooks": [
-            {
-              "title": "\"before each\" hook in \"Sanity tests\"",
-              "fullTitle": "Sanity tests \"before each\" hook in \"Sanity tests\"",
-              "timedOut": null,
-              "duration": 6,
-              "state": null,
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": null,
-              "context": null,
-              "code": "driver = new Builder().forBrowser(\"chrome\").build();\ndriver.get(\"https://www.ticketswap.com/\");",
-              "err": {},
-              "uuid": "891d4bf1-af0d-48cf-8994-9bd8320c169f",
-              "parentUUID": null,
-              "isHook": true,
-              "skipped": false
-            }
-          ],
-          "afterHooks": [
-            {
-              "title": "\"after each\" hook in \"Sanity tests\"",
-              "fullTitle": "Sanity tests \"after each\" hook in \"Sanity tests\"",
-              "timedOut": null,
-              "duration": 0,
-              "state": null,
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": null,
-              "context": null,
-              "code": "driver.quit();",
-              "err": {},
-              "uuid": "3bef707f-9a83-455f-8ae7-9505a6225845",
-              "parentUUID": null,
-              "isHook": true,
-              "skipped": false
-            }
-          ],
-          "tests": [
-            {
-              "title": "Ensures facebook login element exists from sell ticket path",
-              "fullTitle": "Sanity tests Ensures facebook login element exists from sell ticket path",
-              "timedOut": null,
-              "duration": 4131,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "//click the sell tickets button\nawait driver.findElement(By.xpath('//*[@id=\"__next\"]/div[1]/div/nav/ul/li[6]/a')).click();\n//wait till onboarding page loads\nawait driver.wait(until.elementLocated(By.xpath('//*[@id=\"__next\"]/div[3]/div[1]/button'),10000));\n//click the start selling button\nawait driver.findElement(By.className('css-8cc4q9 e1dvqv261')).click();\n//wait till login pop up loads, look for page header\nawait driver.wait(until.elementLocated(By.xpath('/html/body/ticketswap-portal[7]/div/div/header'),10000));\n\n//find the facebook login element\nawait driver.findElement(By.xpath('/html/body/ticketswap-portal[7]/div/div/div/div/div/div/div/button[1]')).then((element)=>{\n  //chai assert\n  expect(element).to.exist;\n});\n\n\n\n//new it block goes here",
-              "err": {},
-              "uuid": "8c0b042f-a80e-47fc-9163-e36294a9c5ac",
-              "parentUUID": null,
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "8c0b042f-a80e-47fc-9163-e36294a9c5ac"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 4131,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": null
-        },
-        {
-          "uuid": "c54a8f1e-8ae0-41eb-a54f-09da41bc4911",
-          "title": "Search functionality tests",
-          "fullFile": "C:\\Users\\Dimitris\\Desktop\\study\\testing JS\\Ticketswap\\test\\searchBarTests.js",
-          "file": "\\test\\searchBarTests.js",
           "beforeHooks": [
             {
               "title": "\"before each\" hook in \"Search functionality tests\"",
               "fullTitle": "Search functionality tests \"before each\" hook in \"Search functionality tests\"",
               "timedOut": null,
-              "duration": 506,
+              "duration": 617,
               "state": null,
               "speed": null,
               "pass": false,
@@ -122,7 +45,7 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\ndriver.get(\"https://www.ticketswap.com/\");",
               "err": {},
-              "uuid": "933cdc60-b04c-45b2-83c1-2282c0cdecb4",
+              "uuid": "92df0e6b-a9af-4c7f-b6af-9d40482e334b",
               "parentUUID": null,
               "isHook": true,
               "skipped": false
@@ -142,7 +65,84 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "35dd5bee-85ac-41a3-aa12-8aacd83279f5",
+              "uuid": "339a1414-0dfd-4d86-98c2-88bcf7f3e0ff",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Ensures facebook login element exists from sell ticket path",
+              "fullTitle": "Search functionality tests Ensures facebook login element exists from sell ticket path",
+              "timedOut": null,
+              "duration": 3492,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//click the sell tickets button\nawait driver.findElement(By.xpath('//*[@id=\"__next\"]/div[1]/div/nav/ul/li[6]/a')).click();\n//wait till onboarding page loads\nawait driver.wait(until.elementLocated(By.xpath('//*[@id=\"__next\"]/div[3]/div[1]/button'),10000));\n//click the start selling button\nawait driver.findElement(By.className('css-8cc4q9 e1dvqv261')).click();\n//wait till login pop up loads, look for page header\nawait driver.wait(until.elementLocated(By.xpath('/html/body/ticketswap-portal[7]/div/div/header'),10000));\n\n//find the facebook login element\nawait driver.findElement(By.xpath('/html/body/ticketswap-portal[7]/div/div/div/div/div/div/div/button[1]')).then((element)=>{\n  //chai assert\n  expect(element).to.exist;\n});\n\n\n\n//new it block goes here",
+              "err": {},
+              "uuid": "02375456-a276-4f46-b8aa-f25ef73082fc",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "02375456-a276-4f46-b8aa-f25ef73082fc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3492,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        },
+        {
+          "uuid": "83eca20b-6b73-4c79-9aaa-20d10f8983a9",
+          "title": "Search functionality tests",
+          "fullFile": "C:\\Users\\Dimitris\\Desktop\\study\\testing JS\\Ticketswap\\test\\searchBarTests.js",
+          "file": "\\test\\searchBarTests.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Search functionality tests\"",
+              "fullTitle": "Search functionality tests \"before each\" hook in \"Search functionality tests\"",
+              "timedOut": null,
+              "duration": 503,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser(\"chrome\").build();\ndriver.get(\"https://www.ticketswap.com/\");",
+              "err": {},
+              "uuid": "d34be3bb-c12a-4163-9bce-f78b5ed65159",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Search functionality tests\"",
+              "fullTitle": "Search functionality tests \"after each\" hook in \"Search functionality tests\"",
+              "timedOut": null,
+              "duration": 24,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": null,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "0836ef69-d1de-4648-ad08-d08959fab0c2",
               "parentUUID": null,
               "isHook": true,
               "skipped": false
@@ -153,16 +153,20 @@
               "title": "Checks search query is included in test results",
               "fullTitle": "Search functionality tests Checks search query is included in test results",
               "timedOut": null,
-              "duration": 4745,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 4946,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "//send keys to the search box\n    await driver.findElement(By.id(\"site-search-input\")).sendKeys(\"Band\");\n    //wait till results drop down appears\n    await driver.wait(until.elementLocated(By.xpath('//*[@id=\"site-search-menu\"]/div[3]/a'),10000));\n    //find and click more results button\n    await driver.findElement(By.xpath('//*[@id=\"site-search-menu\"]/div[3]/a')).click();\n    //wait till next page loads\n    await driver.wait(until.elementLocated(By.xpath('//*[@id=\"__next\"]/div[2]/div[1]/h3'),10000));\n    //collect the first search result element\n    var elementText = await driver.findElement(By.className('css-11rlpdz eh8fd905')).getText();\n    \n    //chai should assert\n    expect(elementText).to.include('Band');\n    // TODO : check against all 5 first elements\n    /*await driver.findElements(By.className('css-11rlpdz eh8fd905')).then((elements)=>{\n        elements.map((el) => {\n            el.getText().then((text) =>{\n              text.should.include('Band');\n            })\n        })\n    });*/",
-              "err": {},
-              "uuid": "92f712db-ca7b-401d-9ee7-9d2fcba8ae67",
+              "code": "const SEARCH_QUERY = \"Band\";\n    //send keys to the search box\n    await driver.findElement(By.id(\"site-search-input\")).sendKeys(SEARCH_QUERY);\n    //wait till results drop down appears\n    await driver.wait(until.elementLocated(By.xpath('//*[@id=\"site-search-menu\"]/div[3]/a'),10000));\n    //find and click more results button\n    await driver.findElement(By.xpath('//*[@id=\"site-search-menu\"]/div[3]/a')).click();\n    //wait till next page loads\n    await driver.wait(until.elementLocated(By.xpath('//*[@id=\"__next\"]/div[2]/div[1]/h3'),10000));\n    \n    //collect the search result elements in an array\n    var elements = [];\n    elements = await driver.findElements(By.className('css-11rlpdz eh8fd905')) \n    \n    // Iterate over their xpath element for the amount of elements found and assert their text element\n    for (var index=1; index<=elements.length; index++){\n      let text = await driver.findElement(By.xpath(`//*[@id=\"__next\"]/div[2]/div[3]/div[${index}]/a/div/div/div/div/h4`)).getText();\n      expect(text).to.include('Crystal');\n  }\n    \n    //Failed attempt to \n    /*elements = await driver.findElements(By.className('css-11rlpdz eh8fd905')) .then((elements)=>{\n        elements.map((el) => {\n            console.log(el.getAttribute(\"innerHTML\"));              //TRIED   el.getAttribute('h4'  / \"textContent\" / \"innerText\"  / \"innerHTML\")   , el.getText()  \n            el.getAttribute(\"textContent\")((text) =>{\n              \n              expect(text).to.include('123');\n              //console.log(text);\n            });\n        });\n    }); */",
+              "err": {
+                "message": "AssertionError: expected 'Marco Borsato & Band' to include 'Crystal'",
+                "estack": "AssertionError: expected 'Marco Borsato & Band' to include 'Crystal'\n    at Context.<anonymous> (test\\searchBarTests.js:47:23)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+                "diff": null
+              },
+              "uuid": "b0120202-68b8-499f-abee-17076bd8d6c4",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -171,7 +175,7 @@
               "title": "Ensures search bar is empty",
               "fullTitle": "Search functionality tests Ensures search bar is empty",
               "timedOut": null,
-              "duration": 3058,
+              "duration": 2962,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -180,7 +184,7 @@
               "context": null,
               "code": "//get the search box text\n    let searchBoxText = await driver.findElement(By.id(\"site-search-input\")).getText();\n    //chai should assert\n    expect(searchBoxText).to.be.empty;",
               "err": {},
-              "uuid": "3a439016-006f-4f6a-9973-098074bdf334",
+              "uuid": "310048d7-55e8-48c2-9005-b71b7cb388d2",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -188,13 +192,14 @@
           ],
           "suites": [],
           "passes": [
-            "92f712db-ca7b-401d-9ee7-9d2fcba8ae67",
-            "3a439016-006f-4f6a-9973-098074bdf334"
+            "310048d7-55e8-48c2-9005-b71b7cb388d2"
           ],
-          "failures": [],
+          "failures": [
+            "b0120202-68b8-499f-abee-17076bd8d6c4"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 7803,
+          "duration": 7908,
           "root": false,
           "rootEmpty": false,
           "_timeout": null
