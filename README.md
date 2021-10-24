@@ -18,7 +18,8 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 
 ## Solution & Test Scenarios
 
-To run the solution please follow these steps 
+To run the solution please follow these steps:  
+
 1.Download and unzip the contents  
 2.Open console in said directory and run npm install    
 3.Download chromedriver for your chrome version : https://chromedriver.chromium.org/downloads   
