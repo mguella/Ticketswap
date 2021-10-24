@@ -22,12 +22,14 @@ The solution is written in Javascript with Selenium WebDriver using Mocha test f
 An alternative solution was written with Python with Selenium WebDriver and unittest framework.   
 Javascript was selected as the solution was more finalized and the results were more presentable. 
 
-**Scenario #1 :** A user searches the site for an event.  
+**Scenario #1 :** A user attempts to use the site search field.  
+**Expected result :** The search field is empty and does not contain any characters.  
+**Test Steps :** Landing page -> Select search field -> Verify element's text property is empty
+
+**Scenario #2 :** A user searches the site for an event.  
 **Expected result :** The results of a search query should partially match the query itself.  
 **Test Steps :** Landing page -> Enter query in search field -> Load more results -> Verify results contain the user's query
 
-**Scenario #2 :** A user attempts to use the site search field.  
-**Expected result :** The search field is empty and does not contain any characters.  
-**Test Steps :** Landing page -> Select search field -> Verify element's text property is empty
+
 
 
