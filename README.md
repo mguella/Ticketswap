@@ -11,7 +11,7 @@ A number of critical features can be indetified :
 
 The feature that was chosen to be tested as critical is the search bar/search functionality.  
 
-As a user myself, I find it to be the most cornerstone feature and the first element that a user will most likely observe and interact.
+As a user myself, I find it to be the most essential feature and the first element that a user will most likely observe and interact.  
 It has a vital functionality, as it enables users to navigate to their desired event.Without the search bar users cannot search for events, the site becomes a random popular event generator and therefore transactions drop.  
 
 The purpose was to evaluate standard and common actions so no assumptions were made in these scenarios.
