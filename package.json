@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --no-timeouts --parallel --reporter mochawesome --require mochawesome/register --reporter-options autoOpen=true"
+    "test": "mocha --no-timeouts --parallel --reporter mochawesome --require mochawesome/register --reporter-options autoOpen=true",
+    "postinstall": "./install_driver.sh"
   },
   "author": "",
   "license": "ISC",
