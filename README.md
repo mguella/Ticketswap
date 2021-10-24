@@ -20,6 +20,8 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 
 To run the solution please TEXTEXTEXTEXT
 npm install
+download chromedriver for your chrome version : https://chromedriver.chromium.org/downloads and add driver to PATH
+instructions to add driver to path : https://www.kenst.com/2015/03/including-the-chromedriver-location-in-macos-system-path/
 npm test -- --grep "Assignment : Search field tests"
 
 The solution is written in Javascript with Selenium WebDriver using Mocha test framework, Chai assertion library and mochawesome for report generation.  
