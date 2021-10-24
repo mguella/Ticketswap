@@ -18,6 +18,8 @@ The purpose was to evaluate standard and common actions so no assumptions were m
 
 ## Solution & Test Scenarios
 
+To run the solution please TEXTEXTEXTEXT
+
 The solution is written in Javascript with Selenium WebDriver using Mocha test framework, Chai assertion library and mochawesome for report generation.  
 An alternative solution was written with Python with Selenium WebDriver and unittest framework.   
 Javascript was selected as the solution was more finalized and the results were more presentable. 
