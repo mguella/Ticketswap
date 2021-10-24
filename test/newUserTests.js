@@ -3,7 +3,7 @@ var expect = require("chai").expect;
 var driver;
 
 //desribe block
-describe("New user tests", async function () {
+describe("Extra : New user tests", async function () {
 
   //before every it block
   beforeEach(async() =>{

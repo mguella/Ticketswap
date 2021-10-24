@@ -3,7 +3,7 @@ var expect = require("chai").expect;
 var driver;
 
 //desribe block
-describe("Search field tests", async function () {
+describe("Assignment : Search field tests", async function () {
 
   //before every it block
   beforeEach(async() =>{
@@ -16,6 +16,16 @@ describe("Search field tests", async function () {
     await driver.quit();
   })
 
+  //it block
+  it("Ensures search bar is empty", async function () {
+
+    //get the search box text
+    let searchBoxText = await driver.findElement(By.id("site-search-input")).getText();
+
+    //chai should assert
+    expect(searchBoxText).to.be.empty;
+
+  });
 
   //it block
   it("Checks search query is included in test results", async function () {
@@ -43,7 +53,7 @@ describe("Search field tests", async function () {
       let text = await driver.findElement(By.xpath(`//*[@id="__next"]/div[2]/div[3]/div[${index}]/a/div/div/div/div/h4`)).getText();
       expect(text).to.include(SEARCH_QUERY);
   }
-    
+
     //Failed attempt to get text element from promises.
     /*elements = await driver.findElements(By.className('css-11rlpdz eh8fd905')) .then((elements)=>{
         elements.map((el) => {
@@ -57,15 +67,5 @@ describe("Search field tests", async function () {
     }); */
     
   });
-
-  //it block
-  it("Ensures search bar is empty", async function () {
-
-    //get the search box text
-    let searchBoxText = await driver.findElement(By.id("site-search-input")).getText();
-
-    //chai should assert
-    expect(searchBoxText).to.be.empty;
-
-  });
+  
 });  
