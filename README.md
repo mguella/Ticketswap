@@ -3,7 +3,11 @@ Identify a feature that is critical, define two scenarios and set up an automati
  
 ## Task description
 A number of critical features can be indetified :   
-Account functionality, Cart functionality, Page navigation, Login functionality, Page load times and more.    
+-Account functionality 
+-Cart functionality 
+-Page navigation 
+-Login functionality 
+-Page load times   
 
 The feature that was chosen to be tested as critical is the search bar/search functionality.  
 
